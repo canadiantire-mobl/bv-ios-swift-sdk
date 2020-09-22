@@ -8,6 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "BVSwift",
+            type: .dynamic,
             targets: ["BVSwift"]),
     ],
     dependencies: [
@@ -16,7 +17,8 @@ let package = Package(
     targets: [
         .target(
             name: "BVSwift",
-            dependencies: []),
+            dependencies: [],
+            path: "BVSwift"),
         .testTarget(
             name: "BVSwiftTests",
             dependencies: ["BVSwift"]),
